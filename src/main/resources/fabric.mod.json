@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "improvedfishing",
+	"version": "${version}",
+	"name": "Improved Fishing",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"ActionLord!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/improved-fishing/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.actionlord.improvedfishing.improvedfishing"
+		],
+		"fabric-datagen": [
+			"net.actionlord.improvedfishing.improvedfishingDataGenerator"
+		]
+	},
+	"mixins": [
+		"improved-fishing.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.19",
+		"minecraft": "~1.19.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
